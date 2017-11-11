@@ -1,0 +1,10 @@
+#Create new ip address on workstation
+#
+#Gives listing of current IPaddresss on box
+#Get-netIPaddress
+#
+#If Ethernet is already assigned use 
+#Remove-NetIPAddress "192.168.1.6" <- example IP 
+#
+#new IPaddress with type, the address, the subnet and the default gateway.
+New-NetIPAddress -AddressFamily IPv4 -IPAddress "192.168.1.10" -PrefixLength 24 -DefaultGateway "192.168.1.1"
